@@ -31,12 +31,19 @@
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_main.xml" value="0.26403985507246375" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_main2.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_number.xml" value="0.23958333333333334" />
-        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_topic.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_topic.xml" value="0.25" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_alphabet_main_view_bottom.xml" value="0.18489583333333334" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_alphabet_main_view_fragment.xml" value="0.18489583333333334" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_english_topic.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_info.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_main.xml" value="0.22" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_questions_topic.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_tajik_topic.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_vocabulary_topic.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/item_alphabet_main_cview_fragment_view.xml" value="0.14375" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/item_view_alphabet_cview.xml" value="0.14375" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/topic_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/menu/bottom_menu.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

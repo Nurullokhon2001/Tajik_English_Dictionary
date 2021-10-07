@@ -9,13 +9,14 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.example.tajikenglish.Alphabet.AlphabetActivity
 import com.example.tajikenglish.Number.NumberActivity
+import com.example.tajikenglish.Topic.TopicActivity
 
 
 class MainFragment : Fragment() {
 //   lateinit var  topicfragment : RelativeLayout
         lateinit var  alphabetFragment : LinearLayout
     lateinit var  numberlayout : LinearLayout
-//    lateinit var  unitFragment : RelativeLayout
+    lateinit var  topiclayout : LinearLayout
 //    lateinit var wordsFragment: RelativeLayout
 //    lateinit var phrasesFragment: RelativeLayout
 //    lateinit var speechFragment: RelativeLayout
@@ -36,6 +37,11 @@ class MainFragment : Fragment() {
         numberlayout = view.findViewById(R.id.numberlayout)
         numberlayout.setOnClickListener {
             val intent = Intent(context, NumberActivity::class.java)
+            startActivity(intent)
+        }
+        topiclayout = view.findViewById(R.id.topiclayout)
+        topiclayout.setOnClickListener {
+            val intent = Intent(context, TopicActivity::class.java)
             startActivity(intent)
         }
         return view
