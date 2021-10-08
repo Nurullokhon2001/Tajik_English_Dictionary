@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TajikEnglish">
         <activity
+            android:name=".tajikEnglish.EnglishTajinDictioanry"
+            android:exported="true" />
+        <activity
+            android:name=".tajikEnglish.TajikEnglishDictionary"
+            android:exported="true" />
+        <activity
             android:name=".Topic.TopicActivity"
             android:exported="true" />
         <activity

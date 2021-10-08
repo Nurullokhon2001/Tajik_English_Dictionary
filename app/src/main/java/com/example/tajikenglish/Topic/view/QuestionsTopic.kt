@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tajikenglish.R
-import com.example.tajikenglish.Topic.Adapters.EnglishTopicAdapter
+import com.example.tajikenglish.Topic.Adapters.TajikDictionaryAdapter
 import com.example.tajikenglish.Topic.vm.EnglishVM
 
 
@@ -20,7 +20,7 @@ class QuestionsTopic : Fragment(),View.OnClickListener {
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewModel: EnglishVM
 
-    private lateinit var adapter: EnglishTopicAdapter
+    private lateinit var adapter: TajikDictionaryAdapter
     override fun onAttach(context: Context) {
         super.onAttach(context)
         viewModel = ViewModelProvider(this).get(EnglishVM::class.java)
@@ -41,7 +41,7 @@ class QuestionsTopic : Fragment(),View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.fetchDictionaries().observe(viewLifecycleOwner, Observer {
-            adapter = EnglishTopicAdapter(it, this@QuestionsTopic)
+            adapter = TajikDictionaryAdapter(it, this@QuestionsTopic)
             recyclerView.adapter = adapter
         })
     }

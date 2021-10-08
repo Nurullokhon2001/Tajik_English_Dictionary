@@ -14,14 +14,14 @@
      />
  <item
      android:id="@+id/vocabulary"
-     android:title="луғат"
-     android:icon="@drawable/globe"
+     android:title="Савол"
+     android:icon="@drawable/library"
      android:enabled="true"
      />
  <item
      android:id="@+id/question"
-     android:title="Савол"
-     android:icon="@drawable/globe"
+     android:title="луғат"
+     android:icon="@drawable/question"
      android:enabled="true"
      />
 </menu>

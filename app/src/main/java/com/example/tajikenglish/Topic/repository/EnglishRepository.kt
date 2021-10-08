@@ -124,10 +124,33 @@ class EnglishRepository {
                 "5.What does manager deals with?\n" +
                 "\n" +
                 "6.Are there any other reasons for you to become a businessperson?"))
-//        array.add(topicModel(5,"Hello","Mother"))
-//        array.add(topicModel(6,"Hello","Mother"))
-//        array.add(topicModel(7,"Hello","Mother"))
-
+        array.add(topicModel(5,"CHOOSING A CAREER","MotheLet me introduce myself. My name is Olimjon. I have left school this year. It is my dream to become a student of the Faculty of foreign languages. I want to study English, German and maybe French. Knowledge of a foreign language opens a new world for us. If you know a foreign language, you can speak with foreigners and it is a way to better understanding. If you know a foreign language you can read books in the original, and it is a way to better understanding of other people’s nature and culture.\n" +
+                "\n" +
+                "In our country children study different foreign languages. At school I took up English. I read stories by English, American and Australian writers. It has become my habit to read English books in adapted form every day. I learn poems and do a lot of grammar exercises.\n" +
+                "\n" +
+                "Now I know I must work hard to master English. Studying the English language under the guidance of the University teachers I want to learn much about the history of words, their origin and usage in ancient times. For example; the word “window” is made of two very old Anglo-Saxon words, such as “wind” and “eye”. The word “window” means “the wind’s eye”. It tells us of the time when a window was only a hole in the wall, and the wind used to come through it.\n" +
+                "\n" +
+                "When I finish my studies, I’ll begin teaching in a secondary school. I think I’ll enjoy the work greatly. Teaching is a noble profession. In modern times all kinds of specialists need foreign languages in their work – teachers, doctors, engineers and people in many other professions. If a specialist doesn’t know a foreign language he can’t use all the foreign books which he needs in his work. I want to teach my pupils to read English books in the original, so they won’t depend on translations. I hope I’ve chosen the right profession.\nr","ИНТИХОБИ КАСБ","Иҷоза диҳед худро муаррифӣ намоям. Номам Олимҷон аст. Мактабро ҳамин сол хатм кардам. Орзуям донишҷӯи факултаи забонҳои хориҷӣ шудан аст. Мехоҳам забонҳои англисӣ, олмонӣ ва фаронсавиро омӯзам. Забонҳои хориҷӣ ба шумо ҷаҳони навро мекушояд. Агар забони хориҷиро донед, метавонед бо хориҷиён сӯҳбат намоед ва ин барои фаҳмиши дурусти ҳамдигарӣ ёрӣ мерасонад. Агар шумо забони хориҷиро донед, метавонед, китобро дар нусхаи асл мутолиа кунед ва он барои фаҳмиши хуби характер ва маданияти халқҳои дигар ёрӣ медиҳад.\n" +
+                "\n" +
+                "Дар кишвари мо кӯдакон забонҳои мухталифи хориҷиро меомӯзанд. Ман дар мактаб забони англисиро омӯхтам. Ҳикояҳои нависандагони англис, амрикоӣ, австралиро хондам. Ба ман одат шудааст, ки ҳар рӯз китобҳои мувофиқро ба забони англисӣ мутолиа намоям. Шеър мехонам ва машқҳои грамматикӣ иҷро мекунам.\n" +
+                "\n" +
+                "Ман медонам, ки ҳоло бояд зиёд биомӯзам, то ки забони англисиро фаро гирам. Бо роҳбарии устодони донишгоҳ забони англисиро омӯхта, мехоҳам дар бораи пайдоиши калимаҳо ва истифодаи онҳо дар замонҳои қадим донишамро зиёд гардонам. Масалан, калимаи “тиреза” аз ду калимаи қадимии англо-саксонӣ иборат аст, яъне “шамол” ва “чашм”. Калимаи “тиреза” маънии “чашми шамол”-ро дорад. Он дар бораи замоне нақл мекунад, ки тирезаҳо сӯрохие дар девор ва воситаи шамолдароӣ буданд.\n" +
+                "\n" +
+                "Вақте ки таҳсилро ба охир мерасонам, дар мактаби таҳсилоти умумӣ ба дарс додан оғоз мекунам. Фикр мекунам, ки қаноатмандии бузурге аз ин кор ҳосил мешавад. Касби омӯзгорӣ, касби бошараф аст. Дар замони мо тамоми ихтисосмандон – муаллимон, муҳандисон ва ашхоси дорои касбҳои дигар бояд забонҳои хориҷиро омӯзанд. Агар мутахассис забони хориҷиро надонад, наметавонад китобҳоеро, ки дар фаолияташ лозим аст, ба забонҳои хориҷӣ мавриди истифода қарор диҳад. Ман мехоҳам ба хонандагон хондани китобҳои англисиро дар нусхаи асл омӯзонам ва онҳо аз тарҷума вобаста набошанд. Ман бовар дорам, ки интихоби воқеӣ кардаам.","Луғатҳо\n" +
+                "\n" +
+                "foreign – хориҷӣ, аҷнабӣ\n" +
+                "\n" +
+                "guidance – роҳбарият, роҳбарон, маъмурият\n" +
+                "\n" +
+                "origin – пайдоиш, асл, падида\nto depend on – тобеъ, (мутеъ, зердаст) будан, мутеъ будан, дастнигар будан, дахлдор будан, вобаста будан","1.What is your dream?\n" +
+                "\n" +
+                "2.What opens a new world for us?\n" +
+                "\n" +
+                "3.What can you do if you know a foreign language?\n" +
+                "\n" +
+                "4.What is the origin of the word “window”?\n" +
+                "\n" +
+                "5.Why is teaching a noble profession?"))
 
         return array
     }

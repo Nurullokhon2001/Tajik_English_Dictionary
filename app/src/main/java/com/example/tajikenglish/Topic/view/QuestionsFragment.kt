@@ -10,8 +10,6 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.tajikenglish.R
-import com.example.tajikenglish.Topic.Adapters.EnglishTopicAdapter
-import com.example.tajikenglish.Topic.repository.model.topicModel
 import com.example.tajikenglish.Topic.vm.EnglishVM
 
 class QuestionsFragment : Fragment() {
