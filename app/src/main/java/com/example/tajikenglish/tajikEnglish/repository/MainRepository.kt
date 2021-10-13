@@ -3,6 +3,7 @@ package com.example.tajikenglish.tajikEnglish.repository
 import android.annotation.SuppressLint
 import android.content.Context
 import com.example.alifboitj.repository.sqllite.MySQLiteOpenHelper
+import com.example.tajikenglish.tjDictionary.Sports
 
 import com.example.tajikenglish.tajikEnglish.model.DictionaryModel
 
@@ -140,4 +141,31 @@ class MainRepository(context: Context) : MySQLiteOpenHelper(context) {
 //        val sql = "UPDATE table_words SET favorite = $favorite WHERE  id=" + id
 //        Execute(sql)
 //    }
+
+
+
+
+
+
+    @SuppressLint("Range")
+    fun getFilter(): ArrayList<Sports> {
+        val array: ArrayList<Sports> = ArrayList()
+        val sql = "SELECT * FROM tj2en"
+        val mCursor = Query(sql)
+        if (mCursor != null) {
+            if (mCursor.moveToFirst()) {
+                do {
+                    val field1 = mCursor.getString(mCursor.getColumnIndex("field1"))
+                    val field2 = mCursor.getString(mCursor.getColumnIndex("field2"))
+
+                    array.add(Sports(field1,  field2 ))
+                } while (mCursor.moveToNext())
+            }
+            mCursor.close()
+        }
+        return array
+    }
+
+
+
 }

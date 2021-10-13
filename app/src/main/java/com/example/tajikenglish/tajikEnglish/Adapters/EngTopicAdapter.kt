@@ -40,10 +40,10 @@ class EngTopicAdapter(private var dataSet: ArrayList<DictionaryModel>,
         //   holder.itemView.startAnimation(animation)
         holder.id.text = data.tajik
         holder.topicname.text = data.english
-        holder.id.tag = position
+       holder.itemView.tag = data
 //        holder.topicname.setOnClickListener(onClickListener)
         holder.itemView.setOnClickListener(onClickListener)
-        holder.itemView.setTag(position)
+        holder.itemView.setTag(data)
 
 
 //        holder.imageView.tag = position

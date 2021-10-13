@@ -26,8 +26,12 @@
         <entry key="..\:/lessons/Final English/English/app/src/main/res/layout/fragment_words.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/Final English/English/app/src/main/res/menu/bottom_menu.xml" value="0.20634920634920634" />
         <entry key="..\:/lessons/Final English/English/app/src/main/res/menu/toolbar.xml" value="0.12777777777777777" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/drawable-mdpi/ic_baseball.xml" value="0.1" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/drawable/fragment_bottom.xml" value="0.20104166666666667" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_alphabet.xml" value="0.33" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_dictonary.xml" value="0.1" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_eng_dictionary.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_english_tajin_dictioanry.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_main.xml" value="0.26403985507246375" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/activity_main2.xml" value="0.27291666666666664" />
@@ -44,7 +48,9 @@
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_tajik_topic.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/fragment_vocabulary_topic.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/item_alphabet_main_cview_fragment_view.xml" value="0.14375" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/item_search.xml" value="0.1" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/item_view_alphabet_cview.xml" value="0.14375" />
+        <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/search_header_layout.xml" value="0.1" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/layout/topic_layout.xml" value="0.27291666666666664" />
         <entry key="..\:/lessons/english final/09092021_2357/English/app/src/main/res/menu/bottom_menu.xml" value="0.27291666666666664" />
       </map>

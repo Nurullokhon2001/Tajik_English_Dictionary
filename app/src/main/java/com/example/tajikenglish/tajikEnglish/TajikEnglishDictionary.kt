@@ -1,30 +1,31 @@
 package com.example.tajikenglish.tajikEnglish
 
-import android.content.Context
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
+import android.speech.tts.TextToSpeech
+
 import android.view.View
-import android.widget.SearchView
 import android.widget.Toast
-import androidx.appcompat.widget.ThemedSpinnerAdapter
-import androidx.core.view.contains
+import androidx.core.content.ContentProviderCompat.requireContext
+
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.encom.dynamicview.repository.model.AlphabetImageWordModel
 import com.example.tajikenglish.R
 
 import com.example.tajikenglish.Topic.vm.tajikenglishvm
 import com.example.tajikenglish.tajikEnglish.Adapters.EngTopicAdapter
 import com.example.tajikenglish.tajikEnglish.model.DictionaryModel
-import java.util.Locale.filter
+import java.util.*
 
 class TajikEnglishDictionary : AppCompatActivity(), View.OnClickListener {
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewModel: tajikenglishvm
     private lateinit var adapter: EngTopicAdapter
+    lateinit var mTTS: TextToSpeech
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,14 @@ class TajikEnglishDictionary : AppCompatActivity(), View.OnClickListener {
             adapter = EngTopicAdapter(it, this)
             recyclerView.adapter = adapter
         })
+
+        mTTS = TextToSpeech(this, TextToSpeech.OnInitListener { status ->
+            if (status != TextToSpeech.ERROR){
+                //if there is no error then set language
+                mTTS.language = Locale.UK
+            }
+        })
+
 
 
 
@@ -51,10 +60,18 @@ class TajikEnglishDictionary : AppCompatActivity(), View.OnClickListener {
 
 
 
+
     override fun onClick(v: View?) {
         if (v!=null){
-            var position = v.tag as Int
-            Toast.makeText(this, "$position", Toast.LENGTH_SHORT).show()
+
+            //   var position = v.getTag() as DictionaryModel
+            val alphabetModel: DictionaryModel = v.getTag() as DictionaryModel
+            val toSpeak = alphabetModel.english
+
+
+            //if there is text in edit text
+            Toast.makeText(this, toSpeak, Toast.LENGTH_SHORT).show()
+            mTTS.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null)
         }
     }
 
