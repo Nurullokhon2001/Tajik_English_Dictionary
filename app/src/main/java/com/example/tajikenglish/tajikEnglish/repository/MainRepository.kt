@@ -3,51 +3,18 @@ package com.example.tajikenglish.tajikEnglish.repository
 import android.annotation.SuppressLint
 import android.content.Context
 import com.example.alifboitj.repository.sqllite.MySQLiteOpenHelper
+import com.example.tajikenglish.EngDictionary.EngSports
 import com.example.tajikenglish.tjDictionary.Sports
 
-import com.example.tajikenglish.tajikEnglish.model.DictionaryModel
 
 
 class MainRepository(context: Context) : MySQLiteOpenHelper(context) {
 
 
+
+
     @SuppressLint("Range")
-    fun getDictionaries(): ArrayList<DictionaryModel> {
-        val array: ArrayList<DictionaryModel> = ArrayList()
-        val sql = "SELECT * FROM tj2en"
-        val mCursor = Query(sql)
-        if (mCursor != null) {
-            if (mCursor.moveToFirst()) {
-                do {
-                    val field1 = mCursor.getString(mCursor.getColumnIndex("field1"))
-                    val field2 = mCursor.getString(mCursor.getColumnIndex("field2"))
 
-                    array.add(DictionaryModel(field1,  field2 ))
-                } while (mCursor.moveToNext())
-            }
-            mCursor.close()
-        }
-        return array
-    }
-    @SuppressLint("Range")
-    fun getEngTaj():ArrayList<DictionaryModel> {
-        val array : ArrayList<DictionaryModel> = ArrayList()
-        val sql = "SELECT * FROM entj"
-       val mCursor = Query(sql)
-        if (mCursor != null) {
-            if (mCursor.moveToFirst()) {
-                do {
-                    val field1 = mCursor.getString(mCursor.getColumnIndex("en"))
-                    val field2 = mCursor.getString(mCursor.getColumnIndex("tj"))
-
-                    array.add(DictionaryModel(field1,  field2 ))
-                } while (mCursor.moveToNext())
-            }
-            mCursor.close()
-        }
-        return array
-
-    }
 
  //   @SuppressLint("Range")
 //    fun getPhrases(): ArrayList<PhrasesItemData> {
@@ -147,7 +114,6 @@ class MainRepository(context: Context) : MySQLiteOpenHelper(context) {
 
 
 
-    @SuppressLint("Range")
     fun getFilter(): ArrayList<Sports> {
         val array: ArrayList<Sports> = ArrayList()
         val sql = "SELECT * FROM tj2en"
@@ -159,6 +125,26 @@ class MainRepository(context: Context) : MySQLiteOpenHelper(context) {
                     val field2 = mCursor.getString(mCursor.getColumnIndex("field2"))
 
                     array.add(Sports(field1,  field2 ))
+                } while (mCursor.moveToNext())
+            }
+            mCursor.close()
+        }
+        return array
+    }
+
+
+    @SuppressLint("Range")
+    fun getFilter2(): List<EngSports> {
+        val array: ArrayList<EngSports> = ArrayList()
+        val sql = "SELECT * FROM tj2en"
+        val mCursor = Query(sql)
+        if (mCursor != null) {
+            if (mCursor.moveToFirst()) {
+                do {
+                    val field1 = mCursor.getString(mCursor.getColumnIndex("field1"))
+                    val field2 = mCursor.getString(mCursor.getColumnIndex("field2"))
+
+                    array.add(EngSports(field2,  field1 ))
                 } while (mCursor.moveToNext())
             }
             mCursor.close()

@@ -8,10 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.example.tajikenglish.Alphabet.AlphabetActivity
+import com.example.tajikenglish.EngDictionary.EngActivity
 import com.example.tajikenglish.tjDictionary.TJDictionary
 import com.example.tajikenglish.Number.NumberActivity
+import com.example.tajikenglish.Phrases.PhraseTest
 import com.example.tajikenglish.Topic.TopicActivity
-import com.example.tajikenglish.tajikEnglish.EnglishTajinDictioanry
+import com.example.tajikenglish.Words.TetsWords
 
 
 class MainFragment : Fragment() {
@@ -20,8 +22,8 @@ class MainFragment : Fragment() {
     lateinit var  numberlayout : LinearLayout
     lateinit var  topiclayout : LinearLayout
     lateinit var engtajLayout: LinearLayout
-        lateinit var dictionary: LinearLayout
-//    lateinit var speechFragment: RelativeLayout
+        lateinit var wordstest: LinearLayout
+    lateinit var phrasetest: LinearLayout
 
 
 
@@ -53,15 +55,23 @@ class MainFragment : Fragment() {
         }
         engtajLayout = view.findViewById(R.id.engtajLayout)
         engtajLayout.setOnClickListener {
-            val intent = Intent(context, EnglishTajinDictioanry::class.java)
+            val intent = Intent(context, EngActivity::class.java)
             startActivity(intent)
         }
 
-        dictionary = view.findViewById(R.id.dictionary)
-        dictionary.setOnClickListener {
-            val intent = Intent(context, TJDictionary::class.java)
+        wordstest = view.findViewById(R.id.wordstest)
+        wordstest.setOnClickListener {
+            val intent = Intent(context, TetsWords::class.java)
             startActivity(intent)
         }
+
+        phrasetest = view.findViewById(R.id.phrasetest)
+        phrasetest.setOnClickListener {
+            val intent = Intent(context, PhraseTest::class.java)
+            startActivity(intent)
+        }
+
+
 
 
 

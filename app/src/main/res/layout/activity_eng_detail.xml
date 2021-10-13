@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EngDictionary.EngDetail"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/Tajik"
+        android:text="English"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0.8"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/detail_about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0.8"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:backgroundTint="@color/black"
+        android:background="@color/black"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/English"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Tajik"
+        android:alpha="0.8"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/detail_about_textt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:alpha="0.8"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
